@@ -1,0 +1,11 @@
+LoRA (Low-Rank Adaptation)
+
+LoRA, which stands for Low-Rank Adaptation, is a technique used to fine-tune large pretrained models efficiently, without updating all of the model's original parameters. It was designed to make fine-tuning large language models practical on limited hardware, such as a single consumer GPU.
+
+Normally, fine-tuning a large model means updating every one of its weights, which for a model with billions of parameters requires enormous amounts of GPU memory and compute. LoRA takes a different approach: it freezes the original pretrained weights entirely, and instead injects small, trainable low-rank matrices alongside certain layers of the model, typically the attention layers.
+
+During training, only these small added matrices are updated, while the original weights remain untouched. Because these matrices are much smaller than the full weight matrices they are attached to, the number of trainable parameters is often reduced to less than one percent of the total model size. This dramatically lowers the memory and compute required for fine-tuning.
+
+After training, the small LoRA adapter can be saved separately from the base model, often as a file only a few megabytes in size. This adapter can later be loaded on top of the same base model to reproduce the fine-tuned behavior, or even swapped out for a different adapter trained for a different task, without needing to store multiple full copies of the large base model.
+
+LoRA is especially popular for adapting large language models to narrow tasks, such as adjusting a model's tone or style, teaching it a specific format, or specializing it for a particular domain, using a relatively small and clean training dataset. Because it requires far less compute than full fine-tuning, LoRA has made it possible for individuals and small teams to customize large models using free or low-cost GPU resources such as Google Colab or Kaggle notebooks.

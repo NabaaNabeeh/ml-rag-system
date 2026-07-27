@@ -1,0 +1,11 @@
+Supervised Learning
+
+Supervised learning is a type of machine learning where a model learns from labeled data. Each training example consists of an input paired with the correct output, and the model's job is to learn the mapping between the two. Once trained, the model can predict outputs for new, unseen inputs.
+
+A classic example is email spam detection. The training data consists of emails labeled as "spam" or "not spam." The model learns patterns in the text, such as certain words or phrases, that are associated with each label. After training, it can classify new incoming emails without needing a human to label them first.
+
+Supervised learning problems generally fall into two categories: classification and regression. Classification tasks predict a discrete category, such as whether an image contains a cat or a dog. Regression tasks predict a continuous value, such as predicting the price of a house based on its size, location, and age.
+
+Common supervised learning algorithms include linear regression, logistic regression, decision trees, random forests, support vector machines, and neural networks. The choice of algorithm depends on the size of the dataset, the complexity of the relationship between inputs and outputs, and how much interpretability is needed.
+
+The main challenge in supervised learning is obtaining enough high-quality labeled data. Labeling data is often expensive and time-consuming, especially for tasks that require expert knowledge, such as labeling medical images. Once trained, the model's performance is typically evaluated on a separate test set that was not used during training, to check how well it generalizes to new data.

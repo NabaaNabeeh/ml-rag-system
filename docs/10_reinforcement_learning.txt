@@ -1,0 +1,11 @@
+Reinforcement Learning
+
+Reinforcement learning is a type of machine learning where an agent learns to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties. Unlike supervised learning, there are no labeled examples telling the agent exactly what the correct action is at each step. Instead, the agent learns through trial and error, gradually improving its behavior based on the outcomes of its actions.
+
+At each step, the agent observes the current state of the environment, chooses an action based on its current strategy, called a policy, and receives a reward signal along with a new state. The agent's goal is to learn a policy that maximizes the total reward it accumulates over time, not just the immediate reward from a single action.
+
+A classic example of reinforcement learning is training an agent to play a video game. The agent might receive a positive reward for scoring points and a negative reward for losing a life. Over many attempts, the agent learns which sequences of actions tend to lead to higher rewards, gradually improving its gameplay without being explicitly told the rules.
+
+One of the central challenges in reinforcement learning is the exploration-exploitation tradeoff. The agent must balance exploring new actions that might lead to better long-term rewards, against exploiting actions it already knows produce good rewards. Too much exploration wastes time on ineffective actions, while too much exploitation can cause the agent to miss out on better strategies it has not yet tried.
+
+Reinforcement learning has been used to achieve notable milestones, such as training agents to play complex games like Go and chess at a superhuman level, and more recently, to fine-tune large language models based on human feedback, a technique often referred to as RLHF, or reinforcement learning from human feedback. This technique helps align a model's outputs more closely with what humans consider helpful, accurate, and appropriate responses.

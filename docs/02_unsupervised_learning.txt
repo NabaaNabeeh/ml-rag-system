@@ -1,0 +1,11 @@
+Unsupervised Learning
+
+Unsupervised learning is a type of machine learning where the model learns patterns from data that has no labels. Unlike supervised learning, there is no "correct answer" provided during training. Instead, the model tries to find structure, patterns, or groupings within the data on its own.
+
+One of the most common unsupervised techniques is clustering, where the goal is to group similar data points together. For example, a retail company might use clustering to segment customers into groups based on purchasing behavior, without knowing in advance what those groups should look like. Popular clustering algorithms include K-means, hierarchical clustering, and DBSCAN.
+
+Another major unsupervised learning task is dimensionality reduction, which reduces the number of features in a dataset while preserving as much important information as possible. This is useful for visualizing high-dimensional data or speeding up other machine learning algorithms. Principal Component Analysis (PCA) and t-SNE are widely used techniques for this purpose.
+
+Anomaly detection is also often framed as an unsupervised problem. The model learns what "normal" data looks like, and then flags data points that deviate significantly from that pattern. This is commonly used in fraud detection, where the vast majority of transactions are normal, and only a small number are fraudulent.
+
+Unsupervised learning is particularly useful when labeled data is scarce or expensive to obtain, since it can extract useful insights directly from raw, unlabeled data. However, evaluating unsupervised models is often more difficult than supervised models, since there is no ground truth to directly compare predictions against.

@@ -1,0 +1,11 @@
+Evaluation Metrics: Accuracy, Precision, and Recall
+
+Evaluating how well a machine learning model performs requires more than just checking if it "works." Different metrics highlight different aspects of a model's performance, and choosing the right one depends heavily on the specific problem being solved.
+
+Accuracy is the simplest metric: it measures the percentage of predictions that were correct out of all predictions made. While accuracy is intuitive, it can be misleading for imbalanced datasets. For example, if only one percent of emails are spam, a model that always predicts "not spam" would achieve ninety-nine percent accuracy, despite being completely useless at detecting spam.
+
+Precision measures, out of all the cases the model predicted as positive, how many were actually positive. High precision means the model rarely raises false alarms. This matters in situations where false positives are costly, such as flagging a legitimate transaction as fraudulent.
+
+Recall measures, out of all the actual positive cases, how many the model correctly identified. High recall means the model rarely misses true positive cases. This matters in situations where false negatives are costly, such as failing to detect a serious illness in a medical screening test.
+
+There is often a tradeoff between precision and recall: improving one can reduce the other, depending on how a model's decision threshold is set. The F1 score combines precision and recall into a single number, using their harmonic mean, and is useful when a balance between the two is desired. For classification problems with more than two classes, or with significant class imbalance, these metrics are often calculated per class and then averaged, to get a fuller picture of model performance.

@@ -1,0 +1,11 @@
+Gradient Descent
+
+Gradient descent is an optimization algorithm used to train machine learning models by gradually adjusting their parameters to minimize a loss function. The loss function measures how far off a model's predictions are from the correct answers, so minimizing it means improving the model's accuracy.
+
+The core idea behind gradient descent is to compute the gradient, which is essentially the slope, of the loss function with respect to each of the model's parameters. This gradient indicates the direction in which the loss would increase the fastest. By moving the parameters in the opposite direction of the gradient, the model gradually reduces its loss, step by step.
+
+The size of each step is controlled by a hyperparameter called the learning rate. If the learning rate is too small, training will proceed very slowly and may take an impractically long time to converge. If the learning rate is too large, the model may overshoot the optimal parameters and fail to converge at all, or even become unstable during training.
+
+There are several variations of gradient descent. Batch gradient descent computes the gradient using the entire training dataset before making a single update, which can be slow for large datasets. Stochastic gradient descent (SGD) updates the parameters using just one training example at a time, which is much faster but noisier. Mini-batch gradient descent, the most commonly used approach in practice, strikes a balance by computing the gradient over small batches of data at a time.
+
+More advanced optimization algorithms, such as Adam and RMSprop, build on the basic idea of gradient descent by adapting the learning rate for each parameter individually based on the history of past gradients. These adaptive methods often converge faster and more reliably than plain gradient descent, and are widely used to train modern deep learning models, including large language models and transformers.

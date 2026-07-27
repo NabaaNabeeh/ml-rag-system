@@ -1,0 +1,11 @@
+Neural Networks
+
+A neural network is a machine learning model loosely inspired by the structure of the human brain. It consists of layers of interconnected nodes, called neurons, that process information and pass signals to one another. Each connection between neurons has an associated weight, which is adjusted during training to help the network make better predictions.
+
+A basic neural network has three types of layers: an input layer, one or more hidden layers, and an output layer. The input layer receives the raw data, such as pixel values from an image. The hidden layers perform transformations on the data, extracting increasingly abstract features as the data passes through the network. The output layer produces the final prediction, such as a class label or a numeric value.
+
+Each neuron applies a mathematical function, called an activation function, to the weighted sum of its inputs. Common activation functions include ReLU (Rectified Linear Unit), sigmoid, and tanh. Activation functions introduce non-linearity into the network, which allows it to learn complex patterns that a simple linear model could not capture.
+
+Training a neural network involves a process called backpropagation, combined with an optimization algorithm such as gradient descent. During training, the network makes a prediction, compares it to the correct answer using a loss function, and then adjusts its weights slightly to reduce the error. This process is repeated many times over the training data until the network's predictions improve.
+
+Deep learning refers to neural networks with many hidden layers, which allows them to learn extremely complex patterns from large amounts of data. Deep learning has driven major advances in image recognition, natural language processing, and speech recognition over the past decade. However, deep neural networks typically require large datasets and significant computing power to train effectively.

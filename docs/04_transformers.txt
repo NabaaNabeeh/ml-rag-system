@@ -1,0 +1,11 @@
+Transformers
+
+The transformer is a neural network architecture introduced in 2017 that has become the foundation of most modern large language models, including GPT, Llama, and Qwen. Unlike earlier architectures such as recurrent neural networks, transformers process an entire sequence of data at once rather than one element at a time, which makes them much faster to train on modern hardware.
+
+The key innovation behind transformers is a mechanism called self-attention. Self-attention allows the model to weigh the importance of different words in a sentence relative to one another, regardless of their distance apart. For example, in the sentence "The cat that chased the mouse was hungry," self-attention helps the model connect "was hungry" back to "the cat," even though several words separate them.
+
+A transformer is typically built from two main components: an encoder and a decoder. The encoder processes the input sequence and builds a rich internal representation of it. The decoder uses that representation to generate an output sequence, one token at a time. Some models, like BERT, use only the encoder. Others, like GPT, use only the decoder. The original transformer used both, and was designed for tasks like translation.
+
+Each transformer layer combines self-attention with a feed-forward neural network, along with techniques such as layer normalization and residual connections, which help stabilize training in very deep networks. Multiple such layers are stacked on top of each other, allowing the model to build increasingly sophisticated representations of language as data passes through the network.
+
+Because transformers can be pretrained on massive amounts of text before being fine-tuned for specific tasks, they have enabled the rise of large, general-purpose language models. Techniques like LoRA make it possible to adapt these large pretrained transformers to new tasks efficiently, without retraining the entire model from scratch.

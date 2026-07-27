@@ -1,0 +1,11 @@
+Overfitting and Underfitting
+
+Overfitting and underfitting describe two common problems that occur when training machine learning models, both related to how well a model generalizes to new, unseen data.
+
+Overfitting happens when a model learns the training data too well, including its noise and random fluctuations, rather than the underlying pattern. An overfit model performs very well on the training data but performs poorly on new data, because it has essentially memorized the training examples instead of learning generalizable rules. This is especially common when a model is too complex relative to the amount of training data available, such as a very deep neural network trained on a small dataset.
+
+Underfitting is the opposite problem. It happens when a model is too simple to capture the underlying pattern in the data. An underfit model performs poorly on both the training data and new data, because it has not learned enough from the training examples in the first place. This often happens when using an overly simple model for a complex problem, or when training is stopped too early.
+
+A useful way to think about this is the bias-variance tradeoff. High bias, low variance models tend to underfit, since they make strong assumptions about the data and are not flexible enough to capture complexity. High variance, low bias models tend to overfit, since they are flexible enough to fit noise in the training data.
+
+Several techniques help address overfitting, including gathering more training data, simplifying the model, using regularization methods such as dropout or L2 regularization, and using early stopping during training. Cross-validation is commonly used to detect both overfitting and underfitting by evaluating a model's performance on data it was not trained on, before final testing.
